@@ -9,7 +9,7 @@
 
   &__image {
     position: relative;
-    background-image: url("/images/bg-intro-mobile.svg");
+    background-image: url("./images/bg-intro-mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -25,7 +25,7 @@
       order: 2;
       height: 40.9rem;
       background-image: none;
-      //   background-image: url("/images/bg-intro-desktop.svg");
+      //   background-image: url("./images/bg-intro-desktop.svg");
       //   background-position: left center;
     }
 
@@ -35,7 +35,7 @@
         position: absolute;
         height: 100%;
         background-repeat: no-repeat;
-        background-image: url("/images/bg-intro-desktop.svg");
+        background-image: url("./images/bg-intro-desktop.svg");
         width: 150%;
         background-size: 122%;
         background-position: 0% 83%;
@@ -47,7 +47,7 @@
       height: 100%;
       width: 100%;
       position: absolute;
-      background-image: url("/images/image-mockups.png");
+      background-image: url("./images/image-mockups.png");
       background-size: 90%;
       background-repeat: no-repeat;
       background-position: center bottom;
