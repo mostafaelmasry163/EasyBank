@@ -1,0 +1,74 @@
+.article {
+  text-align: center;
+  background-color: $veryLightGray;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+
+  &__grid {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    background-color: $white;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.02);
+    @include breakpoint-up(medium) {
+      flex: 1 0 40%;
+      margin: 0.46875rem;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      margin: 0.9375rem;
+    }
+
+    &:hover {
+      .article__title {
+        h3 {
+          color: $limeGreen;
+        }
+      }
+    }
+  }
+
+  &__image {
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__text {
+    color: $grayishBlue;
+
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+    @include breakpoint-up(medium) {
+      padding: 1.875rem 1.5625rem;
+    }
+  }
+
+  &__author {
+    font-size: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    color: $darkBlue;
+    margin-bottom: 0.5rem;
+    font-size: $font-sml;
+    line-height: 1.15;
+    @include breakpoint-up(medium) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 0.8125rem;
+  }
+}
