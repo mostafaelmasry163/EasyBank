@@ -14,7 +14,7 @@ ham.addEventListener('click', function () {
 
     body.classList.toggle('noScroll');
     if (overlay.classList.contains('fade-in')) {
-        ham.children[0].setAttribute("src", "/images/icon-hamburger.svg");
+        ham.children[0].setAttribute("src", "./images/icon-hamburger.svg");
 
         fadeElems.forEach(el => {
 
@@ -22,7 +22,7 @@ ham.addEventListener('click', function () {
             el.classList.add('fade-out');
         });
     } else {
-        ham.children[0].setAttribute("src", "/images/icon-close.svg");
+        ham.children[0].setAttribute("src", "./images/icon-close.svg");
 
         fadeElems.forEach(el => {
 
